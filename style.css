@@ -31,6 +31,11 @@
     padding: 10px 8%;
     position: relative;
 }
+.hero .hero-image-container img{
+    padding: none;
+    position:relative;
+}
+
 nav{
     position: fixed;
     top: 0;
@@ -53,7 +58,7 @@ nav ul{
 nav ul li{
     list-style: none;
     display: inline-block;
-    padding: 5px 15px;
+    padding: 5px 45px;
 }
 nav ul li a{
     text-decoration: none;
@@ -62,6 +67,8 @@ nav ul li a{
 nav a{
     text-decoration: none;
     color: #4e7968;
+    font-size: 18px;
+    font-weight: 500;
 }
 .text-box{
     color: #4e7968;
@@ -73,6 +80,9 @@ nav a{
     line-height: 90px;
     font-weight: 500;
     margin-bottom: 10px;
+}
+.text-box h2{
+    font-size: 45px;
 }
 .text-box #extra-weight{
     font-weight: 550;
@@ -140,14 +150,14 @@ nav a{
     display: flex;
     flex-direction: row;
     /* background: #262626; */
-    color: #fff;
+    color: #000;
     font-weight: 300;
     text-align:left;
     width: 100%;
     margin: 5% 0;
 }
 .text-container{
-    background-color: #4e7968;
+    background-color: #f1eeec;
     align-self: center;
     padding: 80px 50px;
     border-radius: 10px;
@@ -165,7 +175,7 @@ nav a{
 }
 .text-container .btn{
     display: inline-block;
-    background: #fff;
+    background: #4e7968;
     margin-left: 0;
     margin-right: 40px;
     margin-top: 20px;
