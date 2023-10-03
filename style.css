@@ -154,6 +154,9 @@ grid-column: 2;
 .item6{
     grid-area: Item6;
 }
+.item6 img{
+    width: 500px;
+}
 .item7{
     grid-area: Item7;
 }
