@@ -59,6 +59,9 @@ grid-column: 2;
 }
 .item2{
     grid-area: Item2;
+    text-align: center;
+    background-color: #4e7968;
+
 }
 .item1, .item2{
     height: 90vh;
@@ -79,7 +82,7 @@ grid-column: 2;
     font-weight: 500;
 }
 .button{
-    display:inline-block;
+    /* display:inline-block; */
     font-size: 16px;
     text-decoration: none;
     color: #fff;
@@ -91,11 +94,13 @@ grid-column: 2;
     cursor: pointer;
     text-align: center;
     transition: transform 0.3s ease-in-out;
+    float: left;
 }
 .item1 .button:hover{
     transform: translateY(-10px);
 }
-.item2 img{
+.item2 #bærekraft-skog{
+    margin-top: 6%;
     width: 500px;
     border-top-left-radius: 300px;
     border-top-right-radius: 300px;
@@ -105,10 +110,11 @@ grid-column: 2;
     text-decoration: none;
     writing-mode: vertical-lr;
     font-size: 30px;
-    padding: 10px;
+    padding: 0 0 0 10px;
 }
 .item2 .icon{
-    width: 40px;
+    padding: 5px 5px 0 0;
+    width: 45px;
     writing-mode: vertical-lr;
 
 }
@@ -118,16 +124,21 @@ grid-column: 2;
 .item3 img{
     width: 350px;
 }
+.item4, .item5, .item6{
+    background-color: #f1eeec;
+}
 .item4{
     grid-area: Item4;
-    margin: 8% 0;
-    background-color: #f1eeec;
+    margin: 2% 0;
+    padding: 5% 0;
     border-radius: 20px;
 }
 .item4 h1{
+    text-align: start;
     padding: 0 0 1% 5%;
 }
 .item4 p{
+    text-align: start;
     padding: 1% 60% 0 5%;
 }
 .item4 img{
@@ -137,20 +148,31 @@ grid-column: 2;
 .item4 .button{
     margin: 40px 0 0 5%;
 }
+.item5{
+    grid-area: Item5;
+}
+.item6{
+    grid-area: Item6;
+}
+.item7{
+    grid-area: Item7;
+}
 
 .hero-grid-container{
     display: grid;
     grid-template-areas: 
     'Item1 Item1 Item1 Item1 Item2 Item2'
-    'Item3 Item4 Item4 Item4 Item4 Item4';
+    'Item3 Item4 Item4 Item4 Item4 Item4'
+    'Item5 Item5 Item5 Item5 Item6 Item6'
+    'Item7 Item7 Item7 Item7 Item7 Item7';
     gap: 10px;
     /* background-color: #2196f3; */
     padding: 10px;
 }
 .hero-grid-container > div{
     /* background-color: rgba(255, 255, 255, 0.8); */
-    /* text-align: center; */
-    padding: 20px 0;
+    text-align: center;
+    /* padding: 20px 0; */
 }
 
 /* --------Copyright------ */
