@@ -53,6 +53,10 @@ body p{
     height: auto;
     border-radius: 10px;
 }
+#backVideo{
+    width: 100%;
+    object-fit:cover;
+}
 
 .main{
     background-color: #fff;
