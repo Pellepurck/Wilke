@@ -4,6 +4,7 @@ html{
 body{
     background-color: #fff;
     height: 100vh;
+    margin: 5px 20px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
     display: grid;
@@ -41,9 +42,11 @@ body p{
 }
 
 .header2{
-    background-color: #1c1f23;
-
     grid-area: header2;
+    margin-bottom: 20px;
+}
+.header2 img{
+    border-radius: 10px;
 }
 .header2 video{
     width: 100%;
@@ -52,12 +55,11 @@ body p{
 
 .main{
     background-color: #fff;
-    padding: 25px;
     grid-area: main;
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(17, auto);
+    grid-template-rows: repeat(auto);
     grid-template-areas:
         "c1 c1 c2" 
         "c3 c3 c4" 
@@ -69,26 +71,39 @@ body p{
         "c15 c15 c15"
         "c16 c16 c16"
         "c17 c17 c17";
-    gap: 20px;
+    gap: 30px;
 }
 .card {
     background-color: #f1eeec;
     border-radius: 10px;
-    padding: 0 30% 0 3%;
 }
 .card a{
     text-decoration: none;
     color: #000;
 }
+#contact-left a{
+    margin-left: 20px;
+}
 .card i{
-    color: #000;
     font-size: 30px;
-    float: left;
-    margin-right: 10px;
+    margin:0 10px 0 0;
+}
+.card:nth-child(1),
+.card:nth-child(3),
+.card:nth-child(6),
+.card:nth-child(7),
+.card:nth-child(8),
+.card:nth-child(9),
+.card:nth-child(10),
+.card:nth-child(11),
+.card:nth-child(12){
+    padding: 0 30% 20px 20px;
+}
+.card:nth-child(13) h1{
+    margin-left: 20px;
 }
 .card:nth-child(1) {
     grid-area: c1;
-    height: 100%;
 }
 .card:nth-child(2) {
     grid-area: c2;
@@ -105,6 +120,8 @@ body p{
 }
 .card:nth-child(5) {
     grid-area: c5;
+    font-size: 20px;
+    text-align: center;
 }
 .card:nth-child(6) {
     grid-area: c6;
@@ -130,9 +147,12 @@ body p{
 .card:nth-child(13) {
     grid-area: c13;
 }
+.card:nth-child(13) i{
+    color: #4e7968;
+}
 .card:nth-child(14) {
     grid-area: c14;
-    padding: 0 10% 0 3%;
+    padding: 20px;
 }
 .card:nth-child(15) {
     grid-area: c15;
@@ -142,6 +162,7 @@ body p{
 }
 .card:nth-child(17) {
     grid-area: c17;
+    text-align: center;
 }
 .button{
     display:inline-block;
@@ -149,8 +170,6 @@ body p{
     text-decoration: none;
     background-color: #4e7968;
     padding: 16px 50px;
-    margin-top: 2%;
-    margin-bottom: 3%;
     border-radius: 30px;
     cursor: pointer;
     text-align: center;
@@ -160,25 +179,24 @@ body p{
     transform: translateY(-5px);
     transition: 0.5s;
 }
-.fa-solid{
-    display: block;
-    font-size: 4rem;
-    margin-bottom: 0.2em;
-}
 .card input,textarea{
     display: list-item;
-    margin: 10px;
-    width: 100%;
-    font-size: 20px;
+    width: 50%;
+    font-size: 18px;
     background-color: #f1eeec;
     padding: 10px;
+    margin-bottom: 20px;
     border-radius: 10px;
 }
 .social-icons{
-    margin: 100px 0;
+    margin: 50px 0;
 }
-.social-icons i{
-    padding-right: 20px;
+.social-icons i:hover{
+    transform: translateY(-5px);
+    transition: 0.5s;
+}
+.maps iframe{
+    border-radius: 10px;
 }
 @media (max-width: 925px) {
     body{
@@ -204,12 +222,11 @@ body p{
     }
     .main {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(12, auto);
+        grid-template-rows: repeat(auto);
         grid-template-areas: initial;
     }
     .card {
         grid-area: initial !important;
-        padding: 1%;
     }
     #strategy{
         width: 100%;
