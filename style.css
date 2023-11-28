@@ -101,6 +101,9 @@ body p{
     font-size: 30px;
     margin:0 10px 0 0;
 }
+#services i{
+    font-size: 1.3em;
+}
 .card:nth-child(1),
 .card:nth-child(3),
 .card:nth-child(6),
@@ -165,7 +168,7 @@ body p{
 }
 .card:nth-child(14) {
     grid-area: c14;
-    padding: 20px;
+    padding-left: 20px;
 }
 .card:nth-child(15) {
     grid-area: c15;
@@ -212,8 +215,23 @@ body p{
     border-radius: 10px;
 }
 @media (max-width: 925px) {
+    .card:nth-child(1),
+    .card:nth-child(3),
+    .card:nth-child(6),
+    .card:nth-child(7),
+    .card:nth-child(8),
+    .card:nth-child(9),
+    .card:nth-child(10),
+    .card:nth-child(11),
+    .card:nth-child(12){
+        padding: 0 20px 20px 20px;
+    }
+    .card:nth-child(14){
+        padding: 0 0 20px 10px;
+    }
     body{
         grid-template-rows: auto;
+        margin: 0 10px;
     }
     .header{
         grid-template-columns: 1fr;
@@ -222,6 +240,14 @@ body p{
     }
     .header img{
         display:contents;
+    }
+    .header2 video{
+        height: 200px;
+    }
+    .main {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(auto);
+        grid-template-areas: initial;
     }
     body p{
         font-size: 16px;
@@ -233,13 +259,11 @@ body p{
         width: 100px;
         padding: 20px 0;
     }
-    .main {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(auto);
-        grid-template-areas: initial;
-    }
     .card {
         grid-area: initial !important;
+    }
+    .card input,textarea{
+        width: 90%;
     }
     #strategy{
         width: 100%;
