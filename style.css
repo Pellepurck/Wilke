@@ -132,6 +132,7 @@ body p{
 .card:nth-child(2) {
     grid-area: c2;
     max-height: 600px;
+    text-align: center;
 }
 .card:nth-child(2) img{
     height: 100%;
