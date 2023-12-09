@@ -227,7 +227,7 @@ body p{
 footer p{
     font-size: 16px;
 }
-/* ---------About me--------- */
+/* ---------About me/Bærekraft--------- */
 .about-main{
     background-color: #fff;
     grid-area: main;
@@ -314,7 +314,7 @@ footer p{
 ::placeholder{
     color: #000;
 }
-/* ----About me---- */
+/* ----About me/Bærekraft---- */
 
 @media (max-width: 925px) {
     .card:nth-child(1),
@@ -391,7 +391,7 @@ footer p{
     footer p{
         font-size: 14px;
     }
-    /* -----About me----- */
+    /* -----About me/Bærekraft----- */
     .about-main{
         margin: 0 5%;
         display: grid;
@@ -409,4 +409,5 @@ footer p{
     .about-card{
         padding: 0 20px;
     }
+    /* -----About me/Bærekraft----- */
 }
