@@ -295,8 +295,11 @@ footer p{
 .about-card:nth-child(5) i{
     color: #4e7968;
 }
-.about-card:nth-child(5) a, .about-card:nth-child(5) h1{
-    padding: 0 4%;
+.about-card:nth-child(5) h1{
+    padding: 0 20px;
+}
+.about-card:nth-child(5) a{
+    padding-left: 20px;
 }
 .about-card:nth-child(6){
     grid-area: c6-1;
@@ -314,6 +317,99 @@ footer p{
 ::placeholder{
     color: #000;
 }
+/* --------Less-main-------- */
+.less-main{
+    background-color: #fff;
+    grid-area: main;
+    margin: 0 10%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(auto);
+    grid-template-areas:
+        "c1-2 c1-2" 
+        "c2-2 c3-2" 
+        "c4-2 c5-2"
+        "c6-2 c6-2"
+        "c7-2 c7-2"
+        "c8-2 c8-2"
+        "c9-2 c10-2"
+        "footer footer";
+    gap: 30px;
+}
+.less-card{
+    background-color: #f1eeec;
+    border-radius: 10px;
+    padding: 0 20px;
+}
+.less-card a{
+    text-decoration: none;
+    color: #000;
+}
+.less-card i{
+    font-size: 30px;
+    margin:0 10px 0 0;
+}
+.less-card:nth-child(1){
+    grid-area: c1-2;
+    text-align: center;
+}
+.less-card:nth-child(2){
+    grid-area: c2-2;
+}
+.less-card:nth-child(3){
+    grid-area: c3-2;
+}
+.less-card:nth-child(4){
+    grid-area: c4-2;
+}
+.less-card:nth-child(5){
+    grid-area: c5-2;
+}
+.less-card:nth-child(6){
+    grid-area: c6-2;
+}
+.less-card:nth-child(7){
+    grid-area: c7-2;
+}
+.less-card:nth-child(8){
+    grid-area: c8-2;
+    text-align: center;
+}
+.less-card:nth-child(8) img{
+    object-fit: contain;
+    width: 100%;
+    max-height: 400px;
+}
+.less-card:nth-child(9){
+    grid-area: c9-2;
+    padding: 0;
+}
+.less-card:nth-child(9) i{
+    color: #4e7968;
+}
+.less-card:nth-child(9) h1{
+    padding: 0 20px;
+}
+.less-card:nth-child(9) a{
+    padding-left: 20px;
+}
+.less-card:nth-child(10){
+    grid-area: c10-2;
+    padding: 0 3%;
+}
+.less-card input,textarea{
+    display: list-item;
+    width: 50%;
+    font-size: 18px;
+    background-color: #f1eeec;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+/* --------Less-main-------- */
+
+
 /* ----About me/Bærekraft---- */
 
 @media (max-width: 925px) {
