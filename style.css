@@ -296,7 +296,7 @@ footer p{
     color: #4e7968;
 }
 .about-card:nth-child(5) a, .about-card:nth-child(5) h1{
-    padding: 0 2%;
+    padding: 0 4%;
 }
 .about-card:nth-child(6){
     grid-area: c6-1;
