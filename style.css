@@ -445,7 +445,7 @@ footer p{
         display:none;
     }
     .main{
-        /* margin: 0 5%; */
+        margin: 0 5%;
 
         grid-template-columns: 1fr;
         grid-template-rows: repeat(auto);
@@ -503,8 +503,14 @@ footer p{
             "c6-1"
             "footer";
     }
+    .about-card:nth-child(6){
+        padding: 0 0 20px 10px;
+    }
     .about-card{
         padding: 0 20px;
+    }
+    .about-card input,textarea{
+        width: 90%;
     }
     /* -----About me/Bærekraft----- */
 
@@ -531,8 +537,14 @@ footer p{
             "footer";
         gap: 30px;
     }
+    .less-card:nth-child(10){
+        padding: 0 0 20px 10px;
+    }
     .less-card{
         padding: 0 20px;
+    }
+    .less-card input,textarea{
+        width: 90%;
     }
     /* -----Less-main------- */
 
