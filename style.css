@@ -3,10 +3,11 @@ html{
 }
 body{
     background-color: #fff;
-    height: 100vh;
+    /* height: 100vh; */
     margin: 5px 0;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
+    position: relative;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 60px auto;
@@ -27,6 +28,13 @@ body p{
 
     margin: auto 0;
     text-align:center;
+    position: sticky;
+    top: 0;
+    padding: 2px 0;
+    background-color: #fff;
+}
+.header.sticky{
+    background-color: #fff; /* Change the background color when sticky if needed */
 }
 .header img{
     max-width:250px;
@@ -36,6 +44,7 @@ body p{
     font-weight: 600;
     text-decoration: none;
     color: #000;
+    margin-top: 5px;
 }
 .navLinks:hover{
     color: #4e7968;
@@ -57,9 +66,9 @@ body p{
     height: auto;
     object-fit: cover;
 }
-.header2 video{
-    /* width: 100%; */
-    /* height: 80%; */
+/* .header2 video{
+    width: 100%;
+    height: 80%;
     border-radius: 10px;
 }
 #backVideo{
@@ -73,7 +82,7 @@ body p{
     transform: translateY(-50%);
     width: 100px;
     cursor: pointer;
-}
+} */
 
 .main{
     background-color: #fff;
@@ -410,9 +419,6 @@ footer p{
 }
 /* --------Less-main-------- */
 
-
-/* ----About me/Bærekraft---- */
-
 @media (max-width: 925px) {
     .card:nth-child(1),
     .card:nth-child(3),
@@ -436,10 +442,11 @@ footer p{
         "main";
     }
     .header{
-        grid-template-columns: 0.7fr 1fr 1fr 1fr;
+        grid-template-columns: 0.7fr 1fr 0 1fr 1fr;
         /* grid-template-rows: repeat(1, 1fr); */
         /* text-align: center; */
-        margin: 10px 0;
+        margin: 10px none;
+        padding: 10px 0;
     }
     .header img{
         display:none;
@@ -487,6 +494,16 @@ footer p{
     }
     footer p{
         font-size: 14px;
+    }
+    .navLinks:hover{
+        color: #000;
+        transform: none;
+    }
+    .button:hover{
+        transform: none;
+    }
+    .social-icons i:hover{
+        transform: none;
     }
     /* -----About me/Bærekraft----- */
     .about-main{
